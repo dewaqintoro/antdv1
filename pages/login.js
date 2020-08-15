@@ -13,10 +13,6 @@ const LoginDew = () => {
     if(values.username === "admin" && values.password === "admin"){
       // console.log("ini siapa")
       router.push('/admin')
-      // wadudu="1"
-      // history.push('/app');
-      // <Link href="/persebaran">
-      // </Link>
 		}else if(values.username === "2" && values.password === "2"){
 			// console.log("ini siapa")
       wadudu="2"

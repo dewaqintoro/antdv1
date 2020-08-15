@@ -47,58 +47,20 @@ import { Layout, Menu } from 'antd';
 import { UploadOutlined, UserOutlined, VideoCameraOutlined } from '@ant-design/icons';
 import Link from 'next/link'
 const { Header, Content, Footer, Sider } = Layout;
-
-
-
-
-// import SideCompDew from './components/SideCompDew';
-// import Kasus from './kasus';
 import LoginDew from './login';
-// import SideSatu from './coba/sideSatu';
-// import SideDua from './coba/SideDua';
 
- 
+
 
 class index extends Component {
 
-  componentDidMount(){
-    (function() {
-        var e = document.createElement("script");
-        e.type = "text/javascript";
-        e.async = true;
-        e.src = "https://apis.google.com/js/client:platform.js?onload=gPOnLoad";
-        var t = document.getElementsByTagName("script")[0];
-        t.parentNode.insertBefore(e, t)
-    })();    
-}
-
   render() {
     return (
-    
-    // <div>
-    //   <Layout>
-    //     <SideCompDew aktif="1"/>
-    //     <Layout>
-    //       <Content style={{ margin: '24px 16px 0' }}>
-    //         <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
-    //           <Kasus/>
-    //         </div>
-    //       </Content>
-    //     </Layout>
-    //   </Layout>
-    // </div>
- 
-
     <div className="loginku">
       <LoginDew/>
-      {/* <SideSatu/> */}
-      {/* <SideDua/> */}
-      {/* <login/> */}
     </div>
     
     )
   }
 }
-
 
 export default index
