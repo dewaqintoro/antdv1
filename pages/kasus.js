@@ -9,7 +9,7 @@ import SideCompDew from './components/SideCompDew';
  
 import { connect } from 'react-redux'
 import { getCovidsList, getCovidIndo, getCovidPositif, getCovidSembuh } from './actions/userActions'
-import TableCompDew from './components/TableCompDew';
+// import TableCompDew from './components/TableCompDew';
 import CardContDew from './containers/CardContDew';
 
  
@@ -55,7 +55,7 @@ class Kasus extends Component {
         <div className="row dua2">
           <div className="col-12">
             {/* <h1>Dua</h1> */}
-          <TableCompDew/>
+          {/* <TableCompDew/> */}
           </div>
         </div>
         </>
