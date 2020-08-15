@@ -29,7 +29,7 @@ class Kasus extends Component {
     return (
       <> 
         <div className="row satu1">
-          {/* <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque voluptates delectus, ullam et iusto iure placeat asperiores, sapiente impedit ad, error nemo. Iste consectetur modi veritatis rerum, dolore molestiae eos? Velit expedita blanditiis pariatur dolore quibusdam possimus perspiciatis voluptatem doloribus maiores adipisci libero aspernatur explicabo unde, quod reiciendis ea tenetur. Pariatur aut dicta aperiam itaque adipisci, non ducimus recusandae natus quam, sapiente quo ea aliquid, temporibus nam dolores minima tempore doloremque! In sapiente laudantium necessitatibus consectetur quod deleniti rem cumque alias adipisci! Dolore hic sapiente dicta rerum, necessitatibus adipisci laborum maiores eos unde voluptatum assumenda reprehenderit ipsum sint voluptatem deserunt!</h1> */}
+          <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque voluptates delectus, ullam et iusto iure placeat asperiores, sapiente impedit ad, error nemo. Iste consectetur modi veritatis rerum, dolore molestiae eos? Velit expedita blanditiis pariatur dolore quibusdam possimus perspiciatis voluptatem doloribus maiores adipisci libero aspernatur explicabo unde, quod reiciendis ea tenetur. Pariatur aut dicta aperiam itaque adipisci, non ducimus recusandae natus quam, sapiente quo ea aliquid, temporibus nam dolores minima tempore doloremque! In sapiente laudantium necessitatibus consectetur quod deleniti rem cumque alias adipisci! Dolore hic sapiente dicta rerum, necessitatibus adipisci laborum maiores eos unde voluptatum assumenda reprehenderit ipsum sint voluptatem deserunt!</h1>
           
           {/* <div className="col-3 car">
             <div className="car1">
@@ -40,7 +40,7 @@ class Kasus extends Component {
             </Card>
             </div>
           </div> */}
-          <CardContDew/>
+          {/* <CardContDew/> */}
 
         </div>
  
