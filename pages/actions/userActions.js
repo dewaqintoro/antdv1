@@ -159,9 +159,11 @@ export const changeLoginStatus = (isLogin) => {
   };
 };
 
-export const addProduct = (product) => {
+const addProduct = (product) => {
   return {
     type: ADD_PRODUCT,
         product
   };
 };
+
+export default addProduct
