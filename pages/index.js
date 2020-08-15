@@ -1,104 +1,104 @@
-import { Form, Select, InputNumber, Switch, Slider, Button } from 'antd'
+// import React from 'react'
+// import { Layout, Menu } from 'antd';
+// import { UploadOutlined, UserOutlined, VideoCameraOutlined } from '@ant-design/icons';
+// import Link from 'next/link'
+// import SideCompDew from './components/SideCompDew';
+// const { Header, Content, Footer, Sider } = Layout;
 
-// Custom DatePicker that uses Day.js instead of Moment.js
-import DatePicker from '../components/DatePicker'
 
-import { SmileFilled } from '@ant-design/icons'
+// import { Provider, connect } from "react-redux";
+// import { createStore, compose, applyMiddleware } from "redux";
+// import thunk from "redux-thunk";
+// import reducer from './reducers'
 
+// import KasusDew from './kasus'
+
+// const store = createStore(reducer, compose(applyMiddleware(thunk)));
+
+
+// const index = () => {
+  
+  
+//   return (
+//     <Provider store={store}>
+//     {console.log("ini store",store)}
+//     <div>
+//       <Layout>
+//         <SideCompDew/>
+//         <Layout>
+//           <Content style={{ margin: '24px 16px 0' }}>
+//             <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
+//               <KasusDew/>
+//             </div>
+//           </Content>
+//         </Layout>
+//       </Layout>
+//     </div>
+//     </Provider>
+//   )
+// }
+
+// export default index
+
+
+import React, { Component } from 'react'
+
+import { Layout, Menu } from 'antd';
+import { UploadOutlined, UserOutlined, VideoCameraOutlined } from '@ant-design/icons';
 import Link from 'next/link'
+const { Header, Content, Footer, Sider } = Layout;
 
-const FormItem = Form.Item
-const Option = Select.Option
 
-const content = {
-  marginTop: '100px',
+
+
+// import SideCompDew from './components/SideCompDew';
+// import Kasus from './kasus';
+import LoginDew from './login';
+// import SideSatu from './coba/sideSatu';
+// import SideDua from './coba/SideDua';
+
+ 
+
+class index extends Component {
+
+  componentDidMount(){
+    (function() {
+        var e = document.createElement("script");
+        e.type = "text/javascript";
+        e.async = true;
+        e.src = "https://apis.google.com/js/client:platform.js?onload=gPOnLoad";
+        var t = document.getElementsByTagName("script")[0];
+        t.parentNode.insertBefore(e, t)
+    })();    
 }
 
-export default function Home() {
-  return (
-    <div style={content}>
-      <div className="text-center mb-5">
-        <Link href="#">
-          <a className="logo mr-0">
-            <SmileFilled size={48} strokeWidth={1} />
-          </a>
-        </Link>
+  render() {
+    return (
+    
+    // <div>
+    //   <Layout>
+    //     <SideCompDew aktif="1"/>
+    //     <Layout>
+    //       <Content style={{ margin: '24px 16px 0' }}>
+    //         <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
+    //           <Kasus/>
+    //         </div>
+    //       </Content>
+    //     </Layout>
+    //   </Layout>
+    // </div>
 
-        <p className="mb-0 mt-3 text-disabled">Welcome to the world !</p>
-      </div>
-      <div>
-        <Form layout="horizontal">
-          <FormItem
-            label="Input Number"
-            labelCol={{ span: 8 }}
-            wrapperCol={{ span: 8 }}
-          >
-            <InputNumber
-              size="large"
-              min={1}
-              max={10}
-              style={{ width: 100 }}
-              defaultValue={3}
-              name="inputNumber"
-            />
-          </FormItem>
 
-          <FormItem
-            label="Switch"
-            labelCol={{ span: 8 }}
-            wrapperCol={{ span: 8 }}
-          >
-            <Switch defaultChecked name="switch" />
-          </FormItem>
-
-          <FormItem
-            label="Slider"
-            labelCol={{ span: 8 }}
-            wrapperCol={{ span: 8 }}
-          >
-            <Slider defaultValue={70} />
-          </FormItem>
-
-          <FormItem
-            label="Select"
-            labelCol={{ span: 8 }}
-            wrapperCol={{ span: 8 }}
-          >
-            <Select
-              size="large"
-              defaultValue="lucy"
-              style={{ width: 192 }}
-              name="select"
-            >
-              <Option value="jack">jack</Option>
-              <Option value="lucy">lucy</Option>
-              <Option value="disabled" disabled>
-                disabled
-              </Option>
-              <Option value="yiminghe">yiminghe</Option>
-            </Select>
-          </FormItem>
-
-          <FormItem
-            label="DatePicker"
-            labelCol={{ span: 8 }}
-            wrapperCol={{ span: 8 }}
-          >
-            <DatePicker name="startDate" />
-          </FormItem>
-          <FormItem
-            style={{ marginTop: 48 }}
-            wrapperCol={{ span: 8, offset: 8 }}
-          >
-            <Button size="large" type="primary" htmlType="submit">
-              OK
-            </Button>
-            <Button size="large" style={{ marginLeft: 8 }}>
-              Cancel
-            </Button>
-          </FormItem>
-        </Form>
-      </div>
+    <div className="loginku">
+      <LoginDew/>
+      {/* <SideSatu/> */}
+      {/* <SideDua/> */}
+      {/* <login/> */}
     </div>
-  )
+    
+    )
+  }
 }
+
+
+export default index
