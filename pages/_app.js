@@ -15,26 +15,27 @@ import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 import '../styles/Login.css'
 // import '../styles/cobaSide.css'
 
-
-const store = createStore(reducer, compose(applyMiddleware(thunk)));
-import { Provider, connect } from "react-redux";
-import { createStore, compose, applyMiddleware } from "redux";
-import thunk from "redux-thunk";
-import reducer from './reducers'
-
-// export default function MyApp({ Component, pageProps }) {
-//   return <Component {...pageProps} />
-// }
-
 import React from 'react'
+// import { Provider, connect } from "react-redux";
+// import { createStore, compose, applyMiddleware } from "redux";
+// import thunk from "redux-thunk";
+// import reducer from './reducers'
 
-const MyApp = ({ Component, pageProps }) => {
-  return (
-    <Provider store={store}>
-      {console.log("ini store2",store)}
-      <Component {...pageProps} />
-    </Provider>
-  )
+// const store = createStore(reducer, compose(applyMiddleware(thunk)));
+
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />
 }
+
+
+
+// const MyApp = ({ Component, pageProps }) => {
+//   return (
+//     <Provider store={store}>
+//       {console.log("ini store2",store)}
+//       <Component {...pageProps} />
+//     </Provider>
+//   )
+// }
 
 export default MyApp
