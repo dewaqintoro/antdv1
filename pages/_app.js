@@ -16,26 +16,26 @@ import '../styles/Login.css'
 // import '../styles/cobaSide.css'
 
 import React from 'react'
-import { Provider, connect } from "react-redux";
-import { createStore, compose, applyMiddleware } from "redux";
-import thunk from "redux-thunk";
-import reducer from './reducers'
+// import { Provider, connect } from "react-redux";
+// import { createStore, compose, applyMiddleware } from "redux";
+// import thunk from "redux-thunk";
+// import reducer from './reducers'
 
-const store = createStore(reducer, compose(applyMiddleware(thunk)));
+// const store = createStore(reducer, compose(applyMiddleware(thunk)));
 
-// function MyApp({ Component, pageProps }) {
-//   return <Component {...pageProps} />
-// }
-
-
-
-const MyApp = ({ Component, pageProps }) => {
-  return (
-    <Provider store={store}>
-      {console.log("ini store2",store)}
-      <Component {...pageProps} />
-    </Provider>
-  )
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />
 }
+
+
+
+// const MyApp = ({ Component, pageProps }) => {
+//   return (
+//     <Provider store={store}>
+//       {console.log("ini store2",store)}
+//       <Component {...pageProps} />
+//     </Provider>
+//   )
+// }
 
 export default MyApp
