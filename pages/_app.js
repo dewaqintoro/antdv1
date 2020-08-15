@@ -19,9 +19,8 @@ import React from 'react'
 import { Provider, connect } from "react-redux";
 import { createStore, compose, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
-import reducer from './reducers'
 
-const store = createStore(reducer, compose(applyMiddleware(thunk)));
+const store = createStore(compose(applyMiddleware(thunk)));
 
 // function MyApp({ Component, pageProps }) {
 //   return <Component {...pageProps} />
